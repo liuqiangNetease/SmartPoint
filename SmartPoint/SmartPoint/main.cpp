@@ -10,6 +10,9 @@
 #include "Child.h"
 #include "Parent.h"
 
+#include "MainCharacter.h"
+#include "FollowObject.h"
+
 class Test
 {
 public:
@@ -78,6 +81,20 @@ int main(int argc, const char * argv[])
     //shared_ptr可以通过reset方法重置指向另一个对象，此时原对象的引用计数减一。
     p1.reset(new string("cpp11"));
     cout<<"p1 cnt:"<<p1.use_count()<<"\tp2 cnt:"<<p2.use_count()<<"\tp3 cnt:"<<p3.use_count()<<endl;
+    
+    
+    ///test game weak pointer
+    MainCharacterPtr main = make_shared<MainCharacter>();
+    
+    {
+        FollowObjectPtr follow = make_shared<FollowObject>();
+        FollowObjectWeakPtr wpFollow(follow);
+        main->SetFollow(wpFollow);
+    }
+    
+    main->Update();
+    
+    
    
   
     return 0;

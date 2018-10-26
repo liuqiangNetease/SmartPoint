@@ -23,6 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A110A0292148AD5300F28C69 /* MainCharacter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCharacter.h; sourceTree = "<group>"; };
+		A110A02A2148AD6600F28C69 /* FollowObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowObject.h; sourceTree = "<group>"; };
 		A170DD3A20BBE234008C89CE /* SmartPoint */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SmartPoint; sourceTree = BUILT_PRODUCTS_DIR; };
 		A170DD3D20BBE234008C89CE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A170DD4420BBE271008C89CE /* autoPtr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = autoPtr.h; sourceTree = "<group>"; };
@@ -64,6 +66,8 @@
 				A170DD4420BBE271008C89CE /* autoPtr.h */,
 				A170DD4520BBE2F5008C89CE /* Parent.h */,
 				A170DD4620BBE300008C89CE /* Child.h */,
+				A110A0292148AD5300F28C69 /* MainCharacter.h */,
+				A110A02A2148AD6600F28C69 /* FollowObject.h */,
 			);
 			path = SmartPoint;
 			sourceTree = "<group>";
